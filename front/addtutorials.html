@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport News</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="addtutorials.js"></script>
+    <div class="menu">
+      <div class="menu1">
+        <a href="index.html">Home</a>
+
+        <a id="tutBTN" href="addtutorials.html">Add New Tutorial</a>
+      </div>
+      <div class="menu2">
+        <a id="signout">Sign Out</a>
+      </div>
+    </div>
+  </head>
+  <body>
+    <main>
+      <div class="form-box">
+        <form id="form-tutorial">
+          <h2>Add New Tutorial Here:</h2>
+          <div class="input-group">
+            <label for="">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="name"
+              placeholder="Title.."
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="content">Content</label>
+            <textarea
+              name="content"
+              id="content"
+              cols="80"
+              rows="5"
+              style="resize: none"
+              placeholder="Add content here.."
+              required
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <label for="">Available to</label>
+            <select name="private" id="private">
+              <option value="" disabled selected>Select:</option>
+              <option value="1">Private</option>
+              <option value="0">Public</option>
+            </select>
+          </div>
+          <div class="btn">
+            <button id="cancel-button">CANCEL</button>
+            <button type="submit">ADD TUTORIAL</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>CopyRight @ 2021 Sport Tutorials</footer>
+  </body>
+</html>

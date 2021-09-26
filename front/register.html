@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport News</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="register.js"></script>
+    <div class="menu">
+      <div class="menu1">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="menu2">
+        <a id="registermenu" href="register.html">Register</a>
+        <a id="loginmenu" href="login.html">Login</a>
+      </div>
+    </div>
+  </head>
+  <body>
+    <main>
+      <div class="">
+        <h1>Register</h1>
+        <form id="register">
+          <div class="input-group">
+            <label for="email">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              required
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="6"
+              maxlength="15"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button type="submit">REGISTER</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </main>
+    <footer>CopyRight @ 2021 Sport Tutorials</footer>
+  </body>
+</html>
